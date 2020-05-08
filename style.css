@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+.icon {
+    font-size: 5em;
+}
+.fa-building{
+    color: yellow;
+    margin: 0 20px;
+}
+.fa-home {
+    color: yellow;
+    margin: 0 20px;
+}
+span {
+    color: #212121;
+    font-size: 5em;
+    transition: all 1s ease;
+    cursor: grab;
+}
+article {
+    display: flex;
+}
+span:hover {
+    color: rgb(255, 82, 197);
+    transition-property: all !important;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+span:hover + span {
+    color: pink !important;
+    transition-property: all;
+    transition-delay: 1s;
+    font-size: 6em;
+}
+span:hover + span + span {
+    color: rgb(255, 223, 235) !important;
+    transition: 1s;
+}
+span:hover ~ span {
+    color: white;
+    transition: 2s;
+    font-size: 6.5em;
+}
+
+
+
+
